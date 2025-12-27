@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+   
+    <title> HTML with css</title>
+
+    <style>
+/* ===== Base Reset ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header{
+    text-align: center;
+    background-color: #FDF5E6;
+}
+.color-change {
+      font-size: 36px;
+      font-weight: bold;
+      animation: rainbow 5s linear infinite;
+    }
+
+    @keyframes rainbow {
+      0%   { color: #8A8635; }
+      20%  { color: #AA2B1D; }
+      40%  { color: #CC561E; }
+      60%  { color: #F3CF7A; }
+      80%  { color: #000080; }
+      100% { color: violet; }
+    }
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* ===== Layout ===== */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* ===== Typography ===== */
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #222;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* ===== Links ===== */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+   margin-right: 300px;
+   font-size: 16px;          
+  transition: font-size 0.3s ease; 
+}
+a:hover {
+  color: #1e40af;
+   font-size: 20px;          
+}
+
+
+/* ===== Buttons ===== */
+button, .btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+button:hover, .btn:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+}
+
+
+/* ===== Navigation ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+}
+
+
+    </style>
+
+</head>
+
+<body>
+    
+    <header><h1 class="color-change"> Привіт це чистий HTML</h1></header>
+
+    <nav>
+        <a href="*">Головна</a>
+        <a href="*">Головна</a>
+        <a href="*">Головна</a>
+        <a href="*">Головна</a>
+    </nav>
+
+    <section>
+        <h1>Мій досвід роботи з HTML</h1>
+        <p>Приклад сторінки без CSS</p>
+        <button>Clik</button>
+    </section>
+
+    <footer>
+        2025 my site
+    </footer>
+
+</body>
+
+</html> 

@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "93549cb3-263e-475d-a011-eb0681b96674",
+		"name": "params",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50891251",
+		"_collection_link": "https://danylooo-8559011.postman.co/workspace/Danylo's-Workspace~9a95b021-af41-489c-8c64-fa1aafbed6b4/collection/50891251-93549cb3-263e-475d-a011-eb0681b96674?action=share&source=collection_link&creator=50891251"
+	},
+	"item": [
+		{
+			"name": "create user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "change user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
