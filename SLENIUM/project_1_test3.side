@@ -1,0 +1,395 @@
+{
+  "id": "f68a3be5-1f7a-49c2-884c-e4ab7d3e5384",
+  "version": "2.0",
+  "name": "project_1",
+  "url": "https://rozetka.com.ua/",
+  "tests": [{
+    "id": "a10f2831-2157-4c6c-966e-e982a7cbf942",
+    "name": "test_1",
+    "commands": [{
+      "id": "ab055aa5-8329-4f60-b92d-f9d589a9399f",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "931cb06a-1960-4b52-b8b2-a4bd07cd97d0",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b20d0c5-e45d-42b9-af1c-26f958cd1571",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "339700b4-06cc-4601-a87b-8296738f4b4d",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "hdd"
+    }, {
+      "id": "56723dab-389a-4ec4-871a-5706a6c2e7d5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/button",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83a59a3a-b51f-44ee-9b84-4d9a3fff78bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(1) > .relative .tile-image",
+      "targets": [
+        ["css=.item:nth-child(1) > .relative .tile-image", "css:finder"],
+        ["xpath=//img[@alt='Жорсткий диск Toshiba Canvio Basics 4TB HDTB540EK3CA 2.5\" USB 3.2 External Black']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f65e94c9-1a78-41a5-ab3f-600a6dca247e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-block:nth-child(4) .button:nth-child(2)",
+      "targets": [
+        ["css=.d-block:nth-child(4) .button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='#scrollArea']/div/div/div/rz-navigation-buttons/div/button[2]", "xpath:idRelative"],
+        ["xpath=//rz-navigation-buttons/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Характеристики ↓')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "139d3c21-b5e8-4fc1-be96-5d4706e06932",
+      "comment": "",
+      "command": "click",
+      "target": "css=rz-product-characteristics-list .toggle-btn-down",
+      "targets": [
+        ["css=rz-product-characteristics-list .toggle-btn-down", "css:finder"],
+        ["xpath=(//button[@type='button'])[108]", "xpath:attributes"],
+        ["xpath=//div[@id='characteristics-block']/rz-product-block-wrapper/section/div/div[2]/rz-product-characteristics-list/rz-read-all-btn/button", "xpath:idRelative"],
+        ["xpath=//rz-product-characteristics-list/rz-read-all-btn/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Усі характеристики ↓')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2933294-e3b8-4a00-a770-c805387cf29d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.up > .toggle-btn-down",
+      "targets": [
+        ["css=.up > .toggle-btn-down", "css:finder"],
+        ["xpath=(//button[@type='button'])[108]", "xpath:attributes"],
+        ["xpath=//div[@id='characteristics-block']/rz-product-block-wrapper/section/div/div[2]/rz-product-characteristics-list/rz-read-all-btn/button", "xpath:idRelative"],
+        ["xpath=//rz-product-characteristics-list/rz-read-all-btn/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Приховати ↓')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1797ff1-d410-484b-b65f-5a4c21cdd893",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.button--green",
+      "targets": [
+        ["css=.button--green", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/section/div/div/div[4]/rz-product-buy-btn/rz-buy-button/button", "xpath:idRelative"],
+        ["xpath=//rz-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": "Купити"
+    }, {
+      "id": "5bc926fb-4e28-4dad-9873-3f67d9baf54e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button--green",
+      "targets": [
+        ["css=.button--green", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/section/div/div/div[4]/rz-product-buy-btn/rz-buy-button/button", "xpath:idRelative"],
+        ["xpath=//rz-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "62613487-aec8-4e3b-b28a-5cd0ee9a5de4",
+    "name": "test_2",
+    "commands": [{
+      "id": "7c6d11f8-ceff-4350-b26c-605f01ef34ad",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b7cd732-e96c-41b5-a42d-884e5011f320",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lg\\3A d-flex",
+      "targets": [
+        ["css=.lg\\3A d-flex", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d94d93cd-5b19-4bd7-b179-189f51508766",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Ноутбуки",
+      "targets": [
+        ["linkText=Ноутбуки", "linkText"],
+        ["css=.list-content-sub-item:nth-child(1) > .list-content-sub-item-inner:nth-child(1) .d-block", "css:finder"],
+        ["xpath=(//a[contains(text(),'Ноутбуки')])[4]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/notebooks/c80004/')])[2]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/ul/li/a", "xpath:position"]
+      ],
+      "value": "Ноутбуки"
+    }, {
+      "id": "a5de2d39-be39-4e83-bbad-f1c1354c3548",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ноутбуки",
+      "targets": [
+        ["linkText=Ноутбуки", "linkText"],
+        ["css=.list-content-sub-item:nth-child(1) > .list-content-sub-item-inner:nth-child(1) .d-block", "css:finder"],
+        ["xpath=(//a[contains(text(),'Ноутбуки')])[4]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/notebooks/c80004/')])[2]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b9d5f8e-b49d-4c0d-b585-8053b976de16",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.item:nth-child(2) .tile-image",
+      "targets": [
+        ["css=.item:nth-child(2) .tile-image", "css:finder"],
+        ["xpath=//img[@alt='Ноутбук ASUS Vivobook 15 M1502YA-BQ579 (90NB0X21-M00VJ0) Quiet Blue / 15.6\" IPS / AMD Ryzen 7 5825U / RAM 16 ГБ / SSD 512 ГБ / Підсвітка клавіатури']", "xpath:img"],
+        ["xpath=//div[2]/rz-product-tile/article/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44bb43f0-9d9a-49ff-ae7b-ec99b14551cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(2) .tile-image",
+      "targets": [
+        ["css=.item:nth-child(2) .tile-image", "css:finder"],
+        ["xpath=//img[@alt='Ноутбук ASUS Vivobook 15 M1502YA-BQ579 (90NB0X21-M00VJ0) Quiet Blue / 15.6\" IPS / AMD Ryzen 7 5825U / RAM 16 ГБ / SSD 512 ГБ / Підсвітка клавіатури']", "xpath:img"],
+        ["xpath=//div[2]/rz-product-tile/article/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "477ef4de-8bf9-42af-a855-7a0c8a52ed0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .var-options__color-preview",
+      "targets": [
+        ["css=li:nth-child(2) .var-options__color-preview", "css:finder"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/section/div[2]/rz-var-parameters/rz-var-parameter-option/div/div/ul/li[2]/rz-var-parameter-option-item/a/span/span", "xpath:idRelative"],
+        ["xpath=//li[2]/rz-var-parameter-option-item/a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47f20432-63a0-42cf-83c7-77ee87962a78",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .var-options__color-preview",
+      "targets": [
+        ["css=li:nth-child(2) .var-options__color-preview", "css:finder"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/section/div[2]/rz-var-parameters/rz-var-parameter-option/div/div/ul/li[2]/rz-var-parameter-option-item/a/span/span", "xpath:idRelative"],
+        ["xpath=//li[2]/rz-var-parameter-option-item/a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "976e1c0e-70b5-4b74-be72-586f29df204d",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=li:nth-child(2) .var-options__color-preview",
+      "targets": [
+        ["css=li:nth-child(2) .var-options__color-preview", "css:finder"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/section/div[2]/rz-var-parameters/rz-var-parameter-option/div/div/ul/li[2]/rz-var-parameter-option-item/a/span/span", "xpath:idRelative"],
+        ["xpath=//li[2]/rz-var-parameter-option-item/a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19622287-5800-4f0a-bbd8-78173a9df16f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ca4475b-c156-4d2d-83e4-bb281fb48ee5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button--green",
+      "targets": [
+        ["css=.button--green", "css:finder"],
+        ["xpath=(//button[@type='button'])[22]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/section/div/div/div[4]/rz-product-buy-btn/rz-buy-button/button", "xpath:idRelative"],
+        ["xpath=//rz-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "35916b84-4d06-4a8d-913a-174d67ef3585",
+    "name": "test_3",
+    "commands": [{
+      "id": "28487c1d-4e20-4513-b220-ba04570c92c6",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09ebbe07-9491-4cce-8f3e-0924fc223710",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc91c224-0131-404e-aefd-ed577dd92b81",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=стабілізатор напруги",
+      "targets": [
+        ["linkText=стабілізатор напруги", "linkText"],
+        ["css=li:nth-child(3) > .tags-link", "css:finder"],
+        ["xpath=//a[contains(text(),'стабілізатор напруги')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/search/?text=%D1%81%D1%82%D0%B0%D0%B1%D1%96%D0%BB%D1%96%D0%B7%D0%B0%D1%82%D0%BE%D1%80%20%D0%BD%D0%B0%D0%BF%D1%80%D1%83%D0%B3%D0%B8')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'стабілізатор напруги')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e21bc0b-244d-40f5-be2c-b1b1a2dd8b19",
+      "comment": "",
+      "command": "click",
+      "target": "css=.catalog-grid__cell:nth-child(2) .goods-tile__title",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(2) .goods-tile__title", "css:finder"],
+        ["xpath=//li[2]/rz-catalog-tile/app-goods-tile-default/div/article/div/a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Стабілізатор напруги Елекс Гібрид У 9-1/40А 9 кВт v2.0 однофазний')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd56afd8-b87a-416d-8df1-70f1a9a4e57e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button--green",
+      "targets": [
+        ["css=.button--green", "css:finder"],
+        ["xpath=(//button[@type='button'])[15]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/section/div/div/div[4]/rz-product-buy-btn/rz-buy-button/button", "xpath:idRelative"],
+        ["xpath=//rz-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Передзамовити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b07878b8-2d9e-4985-a2cc-37d9fd574458",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.button--green",
+      "targets": [
+        ["css=.button--green", "css:finder"],
+        ["xpath=(//button[@type='button'])[15]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/section/div/div/div[4]/rz-product-buy-btn/rz-buy-button/button", "xpath:idRelative"],
+        ["xpath=//rz-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Передзамовити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a5f40f1-0eab-4b51-92e5-898118f33451",
+      "comment": "",
+      "command": "click",
+      "target": "id=cartProductActions0",
+      "targets": [
+        ["id=cartProductActions0", "id"],
+        ["css=#cartProductActions0", "css:finder"],
+        ["xpath=//button[@id='cartProductActions0']", "xpath:attributes"],
+        ["xpath=//rz-popup-menu/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "287829f7-3a57-4f16-92dc-6735159e6ee1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=rz-trash-icon > .button",
+      "targets": [
+        ["css=rz-trash-icon > .button", "css:finder"],
+        ["xpath=(//button[@type='button'])[99]", "xpath:attributes"],
+        ["xpath=//div[@id='cartProductActions0']/ul/li/rz-trash-icon/button", "xpath:idRelative"],
+        ["xpath=//rz-trash-icon/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Видалити')]", "xpath:innerText"]
+      ],
+      "value": "Видалити"
+    }, {
+      "id": "f81f3745-2755-46e1-9417-69644decaf6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=rz-trash-icon > .button",
+      "targets": [
+        ["css=rz-trash-icon > .button", "css:finder"],
+        ["xpath=(//button[@type='button'])[99]", "xpath:attributes"],
+        ["xpath=//div[@id='cartProductActions0']/ul/li/rz-trash-icon/button", "xpath:idRelative"],
+        ["xpath=//rz-trash-icon/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Видалити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea451690-92f5-46c0-95a4-3eca0782beb1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > .icon",
+      "targets": [
+        ["css=.btn > .icon", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9ed2311d-401d-48d0-8baf-8bd55c98e272",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a10f2831-2157-4c6c-966e-e982a7cbf942"]
+  }],
+  "urls": ["https://rozetka.com.ua/"],
+  "plugins": []
+}

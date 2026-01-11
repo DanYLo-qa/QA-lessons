@@ -1,0 +1,159 @@
+{
+  "id": "f68a3be5-1f7a-49c2-884c-e4ab7d3e5384",
+  "version": "2.0",
+  "name": "project_1",
+  "url": "https://rozetka.com.ua/",
+  "tests": [{
+    "id": "a10f2831-2157-4c6c-966e-e982a7cbf942",
+    "name": "test_1",
+    "commands": [{
+      "id": "ab055aa5-8329-4f60-b92d-f9d589a9399f",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "931cb06a-1960-4b52-b8b2-a4bd07cd97d0",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b20d0c5-e45d-42b9-af1c-26f958cd1571",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "339700b4-06cc-4601-a87b-8296738f4b4d",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "hdd"
+    }, {
+      "id": "56723dab-389a-4ec4-871a-5706a6c2e7d5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/button",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83a59a3a-b51f-44ee-9b84-4d9a3fff78bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(1) > .relative .tile-image",
+      "targets": [
+        ["css=.item:nth-child(1) > .relative .tile-image", "css:finder"],
+        ["xpath=//img[@alt='Жорсткий диск Toshiba Canvio Basics 4TB HDTB540EK3CA 2.5\" USB 3.2 External Black']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f65e94c9-1a78-41a5-ab3f-600a6dca247e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-block:nth-child(4) .button:nth-child(2)",
+      "targets": [
+        ["css=.d-block:nth-child(4) .button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='#scrollArea']/div/div/div/rz-navigation-buttons/div/button[2]", "xpath:idRelative"],
+        ["xpath=//rz-navigation-buttons/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Характеристики ↓')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "139d3c21-b5e8-4fc1-be96-5d4706e06932",
+      "comment": "",
+      "command": "click",
+      "target": "css=rz-product-characteristics-list .toggle-btn-down",
+      "targets": [
+        ["css=rz-product-characteristics-list .toggle-btn-down", "css:finder"],
+        ["xpath=(//button[@type='button'])[108]", "xpath:attributes"],
+        ["xpath=//div[@id='characteristics-block']/rz-product-block-wrapper/section/div/div[2]/rz-product-characteristics-list/rz-read-all-btn/button", "xpath:idRelative"],
+        ["xpath=//rz-product-characteristics-list/rz-read-all-btn/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Усі характеристики ↓')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2933294-e3b8-4a00-a770-c805387cf29d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.up > .toggle-btn-down",
+      "targets": [
+        ["css=.up > .toggle-btn-down", "css:finder"],
+        ["xpath=(//button[@type='button'])[108]", "xpath:attributes"],
+        ["xpath=//div[@id='characteristics-block']/rz-product-block-wrapper/section/div/div[2]/rz-product-characteristics-list/rz-read-all-btn/button", "xpath:idRelative"],
+        ["xpath=//rz-product-characteristics-list/rz-read-all-btn/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Приховати ↓')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1797ff1-d410-484b-b65f-5a4c21cdd893",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.button--green",
+      "targets": [
+        ["css=.button--green", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/section/div/div/div[4]/rz-product-buy-btn/rz-buy-button/button", "xpath:idRelative"],
+        ["xpath=//rz-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": "Купити"
+    }, {
+      "id": "5bc926fb-4e28-4dad-9873-3f67d9baf54e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button--green",
+      "targets": [
+        ["css=.button--green", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[3]/rz-product-main-info/section/div/div/div[4]/rz-product-buy-btn/rz-buy-button/button", "xpath:idRelative"],
+        ["xpath=//rz-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "62613487-aec8-4e3b-b28a-5cd0ee9a5de4",
+    "name": "test_2",
+    "commands": []
+  }, {
+    "id": "35916b84-4d06-4a8d-913a-174d67ef3585",
+    "name": "test_3",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "9ed2311d-401d-48d0-8baf-8bd55c98e272",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a10f2831-2157-4c6c-966e-e982a7cbf942"]
+  }],
+  "urls": ["https://rozetka.com.ua/"],
+  "plugins": []
+}
